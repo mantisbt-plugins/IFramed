@@ -3,8 +3,13 @@
     "branch":            "master",
     "bugs":              "",
     "buildCommand": [
-        "cmd /c mkdir build",
-        "Compress-Archive -Path lang, pages, patch, LICENSE.txt, IFramed.php -CompressionLevel Optimal -DestinationPath build\\IFramed.zip"
+        "cmd /c xcopy lang\\* build\\IFramed\\lang /s /i /y",
+        "cmd /c xcopy pages\\* build\\IFramed\\pages /s /i /y",
+        "cmd /c xcopy patch\\* build\\IFramed\\patch /s /i /y",
+        "cmd /c copy /Y LICENSE.txt build\\IFramed",
+        "cmd /c copy /Y IFramed.php build\\IFramed",
+        "Compress-Archive -Path build\\IFramed -CompressionLevel Optimal -DestinationPath build\\IFramed.zip",
+        "cmd /c rmdir /S /Q build\\IFramed"
     ],
     "changelogFile":     "CHANGELOG.md",
     "deployCommand":     "",
