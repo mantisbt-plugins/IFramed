@@ -1,12 +1,12 @@
-# ProjectPages IFramed Plugin
+# IFramed MantisBT Plugin
 
 [![app-type](https://img.shields.io/badge/category-mantisbt%20plugins-blue.svg)](https://github.com/spmeesseman)
 [![app-lang](https://img.shields.io/badge/language-php-blue.svg)](https://github.com/spmeesseman)
 [![app-publisher](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-app--publisher-e10000.svg)](https://github.com/spmeesseman/app-publisher)
 
 [![authors](https://img.shields.io/badge/authors-scott%20meesseman-6F02B5.svg?logo=visual%20studio%20code)](https://github.com/spmeesseman)
-[![GitHub issues open](https://img.shields.io/github/issues-raw/spmeesseman/IFramed.svg?maxAge=2592000&logo=github)](https://github.com/spmeesseman/mantisbt-plugins/issues)
-[![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/spmeesseman/IFramed.svg?maxAge=2592000&logo=github)](https://github.com/spmeesseman/mantisbt-plugins/issues)
+[![GitHub issues open](https://img.shields.io/github/issues-raw/spmeesseman/IFramed.svg?maxAge=2592000&logo=github)](https://github.com/spmeesseman/IFramed/issues)
+[![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/spmeesseman/IFramed.svg?maxAge=2592000&logo=github)](https://github.com/spmeesseman/IFramed/issues)
 
 - [ProjectPages IFramed Plugin](#ProjectPages-IFramed-Plugin)
   - [Description](#Description)
@@ -20,7 +20,22 @@ This plugin allows for setting up navigation bar links based that can be opened 
 
 ## Installation
 
-Install the plugin using the default installation procedure for a MantisBT plugin.
+Extract the release archive to the MantisBT installations plugins folder:
+
+    cd /var/www/mantisbt/plugins
+    wget -O IFramed.zip https://github.com/spmeesseman/Releases/releases/download/v1.0.0/IFramed.zip
+    unzip IFramed.zip
+    rm -f IFramed.zip
+
+Ensure to use the latest released version number in the download url.
+
+Install the plugin using the default installation procedure for a MantisBT plugin in `Manage -> Plugins`.
+
+A patched file is included that will allow the Wiki page to be opened within the MantisBT UI, as opposed to 'leaving' the page.
+
+    patch/wiki.php
+
+This file was taken from MantisBT v2.21.1. Replace the default file at your own risk and ensure you make a backup of the original before overwriting.
 
 ## Usage
 
