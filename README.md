@@ -60,7 +60,7 @@ Example config_inc.php entry using ProjectPages plugin:
             'access_level' => VIEWER,
             'url'          => 'plugin.php?page=IFramed/main&title=Home&url=https://my.domain.com/websvn/filedetails.php%3Frepname=pja%26path=%2Fproject_name%2Ftrunk%2FREADME.md%26usemime=1',
             'icon'         => 'fa-home',
-            'project_id'   => -1
+            'project_id'   => array ( 2, 5, 8 )
         )
     );
 
@@ -70,30 +70,30 @@ Example config_inc.php entry using ProjectPages plugin:
             'access_level' => VIEWER,
             'url'          => 'plugin.php?page=IFramed/main&title=Home&url=https://my.domain.com/websvn/filedetails.php%3Frepname=pja%26path=%2Fproject_name%2Ftrunk%2FREADME.md%26usemime=1',
             'icon'         => 'fa-book',
-            'project_id'   => -1
-        ),
-        array(
-            'title'        => 'Developer Doc',
-            'access_level' => DEVELOPER,
-            'url'          => 'plugin.php?page=IFramed/main&title=Developer%20Doc&url=https://my.domain.com/doc/developernotes.md',
-            'icon'         => 'fa-book',
-            'project_id'   => 0
-        ),
-        array(
-            'title'        => 'History File',
-            'access_level' => REPORTER,
-            'url'          => 'plugin.php?page=IFramed/main&title=History.txt&url=https://my.domain.com/websvn/filedetails.php%3Frepname=pja%26path=%2Fproject_name%2Ftrunk%2Fdoc%2Fhistory.txt%26usemime=1',
-            'icon'         => 'fa-history',
-            'project_id'   => 0
+            'project_id'   => array ( -1 )
         ),
         array(
             'title'        => 'WebSVN',
             'access_level' => DEVELOPER,
             'url'          => 'plugin.php?page=IFramed/main&title=WebSVN&url=https://my.domain.com/websvn/listing.php%3Frepname=pja%26path=%2Fproject_name%2Ftrunk%2F',
             'icon'         => 'fa-code-fork',
-            'project_id'   => 0
+            'project_id'   => array( -1 )
         )
     );
+
+Note that the keyword `project_name` in the URL text is replaced with the currently loaded MantisBT project's name.
+
+Note that the README page configuration above relies on Scott Meesseman's WebSVN build with markdown support.
+
+The project_id is set to the project_id that the link is to be displayed for, where:
+
+- `0` is the `All Projects` project
+- `-1` is all projects except for the `All Projects` project
+- `-2` is all projects
+
+See the [ProjectPages Documentation](https://github.com/spmeesseman/ProjectPages/blob/master/README.md) for more details.
+
+Git Gists are supported, any url containing `gist-it.appspot.com` will be converted to a Git Gist.
 
 ## Future Maybes
 
