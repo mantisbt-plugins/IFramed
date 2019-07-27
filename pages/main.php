@@ -40,11 +40,21 @@ $t_url = $_GET['url'];
     }
 </script>
 
-<div style="width:98%;margin-left:auto;margin-right:auto;">
-    <!--<div style="margin-left:15px;margin-right:auto;">-->
-    <iframe onLoad="autoResize('iframed');" style="border:0;margin-left:15px;margin-right:15px;" border="0" id="iframed" name="iframed" src="<?php echo $t_url; ?>" width="98%"></iframe>
-</div>
-
 <?php
+
+if (strstr($t_url, "gist-it.appspot.com") == FALSE)
+{
+    echo '<div style="width:98%;margin-left:auto;margin-right:auto;">
+        <iframe onLoad="autoResize(\'iframed\');" style="border:0;margin-left:15px;margin-right:15px;" border="0" id="iframed" name="iframed" src="'.$t_url.'" width="98%"></iframe>
+    </div>';
+}
+else
+{
+    echo '<div style="width:98%;margin-left:auto;margin-right:auto;">
+        <!--<div style="margin-left:15px;margin-right:auto;">-->
+        <script src="'.$t_url.'"></script>
+    </div>';
+}
+
 layout_page_end();
 ?>
