@@ -7,6 +7,8 @@
 [![authors](https://img.shields.io/badge/authors-scott%20meesseman-6F02B5.svg?logo=visual%20studio%20code)](https://github.com/spmeesseman)
 [![GitHub issues open](https://img.shields.io/github/issues-raw/spmeesseman/IFramed.svg?maxAge=2592000&logo=github)](https://github.com/spmeesseman/IFramed/issues)
 [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/spmeesseman/IFramed.svg?maxAge=2592000&logo=github)](https://github.com/spmeesseman/IFramed/issues)
+[![MantisBT version current](https://app1.spmeesseman.com/projects/plugins/ApiExtend/api/versionbadge/IFramed/current)](https://app1.spmeesseman.com/projects)
+[![MantisBT version next](https://app1.spmeesseman.com/projects/plugins/ApiExtend/api/versionbadge/IFramed/next)](https://app1.spmeesseman.com/projects)
 
 - [ProjectPages IFramed Plugin](#ProjectPages-IFramed-Plugin)
   - [Description](#Description)
@@ -27,7 +29,7 @@ Extract the release archive to the MantisBT installations plugins folder:
     unzip IFramed.zip
     rm -f IFramed.zip
 
-Ensure to use the latest released version number in the download url.
+Ensure to use the latest released version number in the download url: [![MantisBT version current](https://app1.spmeesseman.com/projects/plugins/ApiExtend/api/versionbadge/IFramed/current)](https://app1.spmeesseman.com/projects)
 
 Install the plugin using the default installation procedure for a MantisBT plugin in `Manage -> Plugins`.
 
