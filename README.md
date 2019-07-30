@@ -97,11 +97,11 @@ The project_id is set to the project_id that the link is to be displayed for, wh
 
 See the [ProjectPages Documentation](https://github.com/spmeesseman/ProjectPages/blob/master/README.md) for more details.
 
-You must adjust your Content-Security-Policy response header for any cross domain links in an IFrame, ihis is easily done in config_inc.php using the $g_custom_headers variable:
+You must adjust your `Content-Security-Policy` response header for any cross domain links in an IFrame, ihis is easily done in config_inc.php using the $g_custom_headers variable:
 
-    $g_custom_headers = array("Content-Security-Policy: frame-src https://npm.spmeesseman.com/ 'self'; img-src https://secure.gravatar.com/ 'self' data:; default-src 'self'; frame-ancestors       'self'; font-src 'self'; style-src 'self' 'unsafe-inline'; script-src https://cdnjs.cloudflare.com/ http://gist-it.appspot.com/ 'self' 'unsafe-inline'");
+    $g_custom_headers = array("Content-Security-Policy: frame-src http://gist-it.appshot.com/ 'self'; img-src https://secure.gravatar.com/ 'self' data:; default-src 'self'; frame-ancestors       'self'; font-src 'self'; style-src 'self' 'unsafe-inline'; script-src https://cdnjs.cloudflare.com/ http://gist-it.appspot.com/ 'self' 'unsafe-inline'");
 
-Git Gists are supported, any url containing `gist-it.appspot.com` will be converted to a Git Gist.
+Git Gists are supported, any url containing `gist-it.appspot.com` will be converted to a Git Gist.  Note the cross-domain must be added to the `Content-Security-Policy` response header's `frame-src` part as shown in the above example.
 
 ## Future Maybes
 
