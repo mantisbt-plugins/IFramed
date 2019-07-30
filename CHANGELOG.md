@@ -1,5 +1,15 @@
 # IFRAMED CHANGE LOG
 
+## Version 1.1.1 (July 29th, 2019)
+
+### Build System
+
+- add config to publishrc for first mantisbt release
+
+### Documentation
+
+- **README:** update ApiExtend badges
+
 ## Version 1.1.0 (July 27th, 2019)
 
 ### Documentation
