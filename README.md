@@ -29,7 +29,7 @@ Extract the release archive to the MantisBT installations plugins folder:
     unzip IFramed.zip
     rm -f IFramed.zip
 
-Ensure to use the latest released version number in the download url: [![MantisBT version current](https://app1.spmeesseman.com/projects/plugins/ApiExtend/api/versionbadge/IFramed/current)](https://app1.spmeesseman.com/projects)
+Ensure to use the latest released version number in the download url: [![MantisBT version current](https://app1.spmeesseman.com/projects/plugins/ApiExtend/api/versionbadge/IFramed/current)](https://app1.spmeesseman.com/projects) (version badge available via the [ApiExtend Plugin](https://github.com/spmeesseman/ApiExtend))
 
 Install the plugin using the default installation procedure for a MantisBT plugin in `Manage -> Plugins`.
 
