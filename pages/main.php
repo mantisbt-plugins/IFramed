@@ -17,26 +17,21 @@ $t_url = $_GET['url'];
     function autoResize(id) 
     {
         var elem = document.getElementById(id);
-        //var newheight;
-        //var newwidth;
-        var newheight = document.getElementById(id).contentWindow.document.body.scrollHeight + 30;
-        //newwidth=document.getElementById(id).contentWindow.document.body.scrollWidth;
-        var contHeight = window.innerHeight - 260;
+        var newheight = 0;
+        var contHeight = window.innerHeight - 260; // minus header/footer height
 
+        try {
+            newheight = document.getElementById(id).contentWindow.document.body.scrollHeight + 30;
+        }
+        catch (e) {
+            // probably cross-domain iframe error
+        }
+        
         if (newheight < contHeight) {
             newheight = contHeight;
         }
+
         elem.height = newheight + "px";
-
-        //document.getElementById(id).width= (newwidth) + "px";
-
-        //console.log(document.getElementById(id).height);
-        //console.log(document.getElementById(id).width);
-
-        //console.log('here');
-        //console.log(document.getElementById('main-container').height);
-        //console.log(window.frameElement.offsetHeight);
-
     }
 </script>
 
