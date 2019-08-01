@@ -1,5 +1,16 @@
 # IFRAMED CHANGE LOG
 
+## Version 1.1.2 (July 31st, 2019)
+
+### Documentation
+
+- **README:** add info on Content-Security-Policy header and cross domain links in an iframe
+- **README:** update info on gistit
+
+### Bug Fixes
+
+- **CORS:** blocked cors requests cause frame to not be at least risized to the heigth of the parent container.
+
 ## Version 1.1.1 (July 29th, 2019)
 
 ### Build System
