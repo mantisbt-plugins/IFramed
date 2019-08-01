@@ -12,11 +12,11 @@
 [![MantisBT version current](https://app1.spmeesseman.com/projects/plugins/ApiExtend/api/versionbadge/IFramed/current)](https://app1.spmeesseman.com/projects/set_project.php?project=IFramed&make_default=no&ref=plugin.php?page=Releases/releases)
 [![MantisBT version next](https://app1.spmeesseman.com/projects/plugins/ApiExtend/api/versionbadge/IFramed/next)](https://app1.spmeesseman.com/projects/set_project.php?project=IFramed&make_default=no&ref=plugin.php?page=Releases/releases)
 
-- [ProjectPages IFramed Plugin](#ProjectPages-IFramed-Plugin)
+- [IFramed MantisBT Plugin](#IFramed-MantisBT-Plugin)
   - [Description](#Description)
   - [Installation](#Installation)
   - [Usage](#Usage)
-  - [Future Maybes](#Future-Maybes)
+  - [Todos](#Todos)
 
 ## Description
 
@@ -27,7 +27,7 @@ This plugin allows for setting up navigation bar links based that can be opened 
 Extract the release archive to the MantisBT installations plugins folder:
 
     cd /var/www/mantisbt/plugins
-    wget -O IFramed.zip https://github.com/mantisbt-plugins/Releases/releases/download/v1.0.0/IFramed.zip
+    wget -O IFramed.zip https://github.com/mantisbt-plugins/IFramed/releases/download/v1.0.0/IFramed.zip
     unzip IFramed.zip
     rm -f IFramed.zip
 
@@ -103,6 +103,6 @@ You must adjust your `Content-Security-Policy` response header for any cross dom
 
 Git Gists are supported, any url containing `gist-it.appspot.com` will be converted to a Git Gist.  Note the cross-domain must be added to the `Content-Security-Policy` response header's `frame-src` part as shown in the above example.
 
-## Future Maybes
+## Todos
 
-- User level link access
+- [ ] User level link access
