@@ -1,5 +1,11 @@
 # IFRAMED CHANGE LOG
 
+## Version 1.1.3 (August 1st, 2019)
+
+### Bug Fixes
+
+- randomly, the iframed windows vertical scrollbar is shown when page is not cross-domain and resized to the height of the content window.
+
 ## Version 1.1.2 (July 31st, 2019)
 
 ### Documentation
