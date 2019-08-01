@@ -17,7 +17,7 @@ class IFramedPlugin extends MantisPlugin
 
     $this->author = "Scott Meesseman";
     $this->contact = "spmeesseman@gmail.com";
-    $this->url = "https://github.com/spmeesseman/mantis-plugins";
+    $this->url = "https://github.com/mantisbt-plugins/IFramed";
   }
 
   public function hooks()
