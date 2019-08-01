@@ -21,7 +21,7 @@ $t_url = $_GET['url'];
         var contHeight = window.innerHeight - 260; // minus header/footer height
 
         try {
-            newheight = document.getElementById(id).contentWindow.document.body.scrollHeight + 30;
+            newheight = document.getElementById(id).contentWindow.document.body.scrollHeight + 35;
         }
         catch (e) {
             // probably cross-domain iframe error
