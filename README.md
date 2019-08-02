@@ -1,12 +1,12 @@
 # IFramed MantisBT Plugin
 
-[![app-type](https://img.shields.io/badge/category-mantisbt%20plugins-blue.svg)](https://github.com/spmeesseman)
-[![app-lang](https://img.shields.io/badge/language-php-blue.svg)](https://github.com/spmeesseman)
+![app-type](https://img.shields.io/badge/category-mantisbt%20plugins-blue.svg)
+![app-lang](https://img.shields.io/badge/language-php-blue.svg)
 [![app-publisher](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-app--publisher-e10000.svg)](https://github.com/spmeesseman/app-publisher)
 [![authors](https://img.shields.io/badge/authors-scott%20meesseman-6F02B5.svg?logo=visual%20studio%20code)](https://github.com/spmeesseman)
 
-[![GitHub issues open](https://img.shields.io/github/issues-raw/spmeesseman/IFramed.svg?maxAge=2592000&logo=github)](https://github.com/mantisbt-plugins/IFramed/issues)
-[![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/spmeesseman/IFramed.svg?maxAge=2592000&logo=github)](https://github.com/mantisbt-plugins/IFramed/issues)
+[![GitHub issues open](https://img.shields.io/github/issues-raw/mantisbt-plugins/IFramed.svg?maxAge=2592000&logo=github)](https://github.com/mantisbt-plugins/IFramed/issues)
+[![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/mantisbt-plugins/IFramed.svg?maxAge=2592000&logo=github)](https://github.com/mantisbt-plugins/IFramed/issues)
 [![MantisBT issues open](https://app1.spmeesseman.com/projects/plugins/ApiExtend/api/issues/countbadge/IFramed/open)](https://app1.spmeesseman.com/projects/set_project.php?project=IFramed&make_default=no&ref=bug_report_page.php)
 [![MantisBT issues closed](https://app1.spmeesseman.com/projects/plugins/ApiExtend/api/issues/countbadge/IFramed/closed)](https://app1.spmeesseman.com/projects/set_project.php?project=IFramed&make_default=no&ref=bug_report_page.php)
 [![MantisBT version current](https://app1.spmeesseman.com/projects/plugins/ApiExtend/api/versionbadge/IFramed/current)](https://app1.spmeesseman.com/projects/set_project.php?project=IFramed&make_default=no&ref=plugin.php?page=Releases/releases)
@@ -15,6 +15,7 @@
 - [IFramed MantisBT Plugin](#IFramed-MantisBT-Plugin)
   - [Description](#Description)
   - [Installation](#Installation)
+  - [Issues and Feature Requests](#Issues-and-Feature-Requests)
   - [Usage](#Usage)
   - [Todos](#Todos)
 
@@ -40,6 +41,10 @@ A patched file is included that will allow the Wiki page to be opened within the
     patch/wiki.php
 
 This file was taken from MantisBT v2.21.1. Replace the default file at your own risk and ensure you make a backup of the original before overwriting.
+
+## Issues and Feature Requests
+
+Issues for my plugins will probably at some point be hosted by my [MantisBT](https://app1.spmeesseman.com/projects/set_project.php?project=ApiExtend&make_default=no&ref=bug_report_page.php) site.  Until that is up and running and configured correctly, please use [GitHub Issues](https://github.com/mantisbt-plugins/ApiExtend/issues) to report any problems or requests.
 
 ## Usage
 
