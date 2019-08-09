@@ -9,7 +9,7 @@
         "cmd /c copy /Y LICENSE.txt build\\IFramed",
         "cmd /c copy /Y IFramed.php build\\IFramed",
         "Compress-Archive -Path build\\IFramed -Update -CompressionLevel Optimal -DestinationPath build\\IFramed.zip",
-        "tar -czf build/IFramed.tgz build\\IFramed",
+        "tar -C build -czf build/IFramed.tgz IFramed",
         "cmd /c rmdir /S /Q build\\IFramed"
     ],
     "changelogFile":     "CHANGELOG.md",
