@@ -10,7 +10,7 @@ class IFramedPlugin extends MantisPlugin
     $this->name = plugin_lang_get("title");
     $this->description = plugin_lang_get("description");
 
-    $this->version = "1.1.4";
+    $this->version = "1.1.5";
     $this->requires = array(
       "MantisCore" => "2.0.0",
     );
