@@ -106,7 +106,7 @@ You must adjust your `Content-Security-Policy` response header for any cross dom
 
 Git Gists are supported, any url containing `gist-it.appspot.com` will be converted to a Git Gist.  Note the cross-domain must be added to the `Content-Security-Policy` response header's `frame-src` part as shown in the above example.
 
-A rewrite rule may need to be written to take care of the **&amp;** problem when viewing filedetails page when using the IFramed plugin, in Apache, this would look something like this:
+A rewrite rule may need to be written on the web server to take care of the **&amp;** problem when viewing filedetails page when using the IFramed plugin, in Apache, this would look something like this:
 
     RewriteCond %{QUERY_STRING} ^repname=(.*)(&amp;)path=(.*)(&amp;)(.*)$
     RewriteRule ^(.*)$ https://my.domain.com/websvn/filedetails.php?repname=%1&path=%3&%5 [N]
