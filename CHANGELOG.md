@@ -1,5 +1,17 @@
 # IFRAMED CHANGE LOG
 
+## Version 1.1.6 (September 6th, 2019)
+
+### Documentation
+
+- **readme:** rewording
+- **readme:** udpate issues submit section
+- **readme:** update info on rewrite rule if needed
+
+### Bug Fixes
+
+- clicking links within the iframed page does not readjust the frame height, it is stuck at the initial pages height.
+
 ## Version 1.1.5 (August 8th, 2019)
 
 ### Bug Fixes
