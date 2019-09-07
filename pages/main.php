@@ -13,18 +13,21 @@ $t_url = $_GET['url'];
 ?>
 
 <script type="text/javascript">
-    //var hasLoaded = 0;
+    var hasLoaded = 0;
     function autoResize(id) 
     {
         var elem = document.getElementById(id);
         var newheight = 0;
         var contHeight = window.innerHeight - 260; // minus header/footer height
-
         try {
+            if (hasLoaded) { // reset height, otherwise if last page had height > new page, sizing gets messed up
+                elem.height = contHeight;     // and resizes too much height
+            }
             newheight = document.getElementById(id).contentWindow.document.body.scrollHeight + 35;
         }
         catch (e) {
             // probably cross-domain iframe error
+            console.log(e);
         }
         
         if (newheight < contHeight) {
@@ -32,6 +35,8 @@ $t_url = $_GET['url'];
         }
 
         elem.height = newheight + "px";
+
+        hasLoaded = 1;
     }
 </script>
 
